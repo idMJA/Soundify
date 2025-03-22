@@ -128,8 +128,10 @@ export default function Home() {
 								strokeWidth="2"
 								strokeLinecap="round"
 								strokeLinejoin="round"
+								aria-label="Play button"
 							>
-								<polygon points="5 3 19 12 5 21 5 3"></polygon>
+								<title>Play Button</title>
+								<polygon points="5 3 19 12 5 21 5 3" />
 							</svg>
 							Web Player
 						</a>
@@ -144,8 +146,10 @@ export default function Home() {
 								strokeWidth="2"
 								strokeLinecap="round"
 								strokeLinejoin="round"
+								aria-label="Play button"
 							>
-								<polygon points="5 3 19 12 5 21 5 3"></polygon>
+								<title>Play Button</title>
+								<polygon points="5 3 19 12 5 21 5 3" />
 							</svg>
 						</Link>
 					</div>
@@ -174,7 +178,7 @@ export default function Home() {
 								</div>
 							</div>
 							<div className="relative w-full max-w-md aspect-square">
-								<div className="absolute inset-0 bg-gradient-to-tr from-primary to-accent rounded-full opacity-30 blur-2xl"></div>
+								<div className="absolute inset-0 bg-gradient-to-tr from-primary to-accent rounded-full opacity-30 blur-2xl" />
 								<div className="relative z-10 vinyl-spin">
 									<Image
 										src="/vinyl-record.png"
@@ -220,8 +224,10 @@ export default function Home() {
 													strokeLinecap="round"
 													strokeLinejoin="round"
 													className="text-primary-foreground"
+													aria-label="Play icon"
 												>
-													<polygon points="5 3 19 12 5 21 5 3"></polygon>
+													<title>Play icon</title>
+													<polygon points="5 3 19 12 5 21 5 3" />
 												</svg>
 											</div>
 										</div>
@@ -249,7 +255,7 @@ export default function Home() {
 								>
 									<div
 										className={`absolute inset-0 bg-gradient-to-br ${genre.color} opacity-80`}
-									></div>
+									/>
 									<Image
 										src={genre.image}
 										alt={genre.name}
@@ -287,10 +293,12 @@ export default function Home() {
 										strokeLinecap="round"
 										strokeLinejoin="round"
 										className="text-primary"
+										aria-label="Music icon"
 									>
-										<path d="M9 18V5l12-2v13"></path>
-										<circle cx="6" cy="18" r="3"></circle>
-										<circle cx="18" cy="16" r="3"></circle>
+										<title>Music icon</title>
+										<path d="M9 18V5l12-2v13" />
+										<circle cx="6" cy="18" r="3" />
+										<circle cx="18" cy="16" r="3" />
 									</svg>
 								</div>
 								<h3 className="text-xl font-semibold mb-2">Unlimited Music</h3>
@@ -312,8 +320,10 @@ export default function Home() {
 										strokeLinecap="round"
 										strokeLinejoin="round"
 										className="text-primary"
+										aria-label="Music icon"
 									>
-										<polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"></polygon>
+										<title>Music icon</title>
+										<polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2" />
 									</svg>
 								</div>
 								<h3 className="text-xl font-semibold mb-2">High Quality</h3>
@@ -335,12 +345,14 @@ export default function Home() {
 										strokeLinecap="round"
 										strokeLinejoin="round"
 										className="text-primary"
+										aria-label="Music icon"
 									>
-										<path d="M21 15V6"></path>
-										<path d="M18.5 18a2.5 2.5 0 1 0 0-5 2.5 2.5 0 0 0 0 5z"></path>
-										<path d="M12 12H3"></path>
-										<path d="M16 6H3"></path>
-										<path d="M12 18H3"></path>
+										<title>Music icon</title>
+										<path d="M21 15V6" />
+										<path d="M18.5 18a2.5 2.5 0 1 0 0-5 2.5 2.5 0 0 0 0 5z" />
+										<path d="M12 12H3" />
+										<path d="M16 6H3" />
+										<path d="M12 18H3" />
 									</svg>
 								</div>
 								<h3 className="text-xl font-semibold mb-2">
@@ -380,9 +392,11 @@ export default function Home() {
 								strokeWidth="2"
 								strokeLinecap="round"
 								strokeLinejoin="round"
+								aria-label="Play button"
 							>
-								<line x1="5" y1="12" x2="19" y2="12"></line>
-								<polyline points="12 5 19 12 12 19"></polyline>
+								<title>Play button</title>
+								<line x1="5" y1="12" x2="19" y2="12" />
+								<polyline points="12 5 19 12 12 19" />
 							</svg>
 						</Link>
 					</div>
@@ -516,9 +530,10 @@ export default function Home() {
 									strokeLinecap="round"
 									strokeLinejoin="round"
 								>
-									<rect x="2" y="2" width="20" height="20" rx="5" ry="5"></rect>
-									<path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"></path>
-									<line x1="17.5" y1="6.5" x2="17.51" y2="6.5"></line>
+									<title>Instagram icon</title>
+									<rect x="2" y="2" width="20" height="20" rx="5" ry="5" />
+									<path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z" />
+									<line x1="17.5" y1="6.5" x2="17.51" y2="6.5" />
 								</svg>
 							</a>
 							<a
@@ -537,7 +552,8 @@ export default function Home() {
 									strokeLinecap="round"
 									strokeLinejoin="round"
 								>
-									<path d="M22 4s-.7 2.1-2 3.4c1.6 10-9.4 17.3-18 11.6 2.2.1 4.4-.6 6-2C3 15.5.5 9.6 3 5c2.2 2.6 5.6 4.1 9 4-.9-4.2 4-6.6 7-3.8 1.1 0 3-1.2 3-1.2z"></path>
+									<title>Twitter icon</title>
+									<path d="M22 4s-.7 2.1-2 3.4c1.6 10-9.4 17.3-18 11.6 2.2.1 4.4-.6 6-2C3 15.5.5 9.6 3 5c2.2 2.6 5.6 4.1 9 4-.9-4.2 4-6.6 7-3.8 1.1 0 3-1.2 3-1.2z" />
 								</svg>
 							</a>
 							<a
@@ -556,7 +572,8 @@ export default function Home() {
 									strokeLinecap="round"
 									strokeLinejoin="round"
 								>
-									<path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"></path>
+									<title>Facebook icon</title>
+									<path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z" />
 								</svg>
 							</a>
 						</div>
@@ -582,8 +599,9 @@ export default function Home() {
 							strokeLinecap="round"
 							strokeLinejoin="round"
 						>
-							<path d="m3 9 9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"></path>
-							<polyline points="9 22 9 12 15 12 15 22"></polyline>
+							<title>Home icon</title>
+							<path d="m3 9 9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z" />
+							<polyline points="9 22 9 12 15 12 15 22" />
 						</svg>
 						<span>Home</span>
 					</Link>
@@ -602,8 +620,9 @@ export default function Home() {
 							strokeLinecap="round"
 							strokeLinejoin="round"
 						>
-							<circle cx="11" cy="11" r="8"></circle>
-							<line x1="21" y1="21" x2="16.65" y2="16.65"></line>
+							<title>Search icon</title>
+							<circle cx="11" cy="11" r="8" />
+							<line x1="21" y1="21" x2="16.65" y2="16.65" />
 						</svg>
 						<span>Search</span>
 					</Link>
@@ -622,10 +641,11 @@ export default function Home() {
 							strokeLinecap="round"
 							strokeLinejoin="round"
 						>
-							<path d="m16 6 4 14"></path>
-							<path d="M12 6v14"></path>
-							<path d="M8 8v12"></path>
-							<path d="M4 4v16"></path>
+							<title>Library icon</title>
+							<path d="m16 6 4 14" />
+							<path d="M12 6v14" />
+							<path d="M8 8v12" />
+							<path d="M4 4v16" />
 						</svg>
 						<span>Library</span>
 					</Link>
@@ -644,8 +664,9 @@ export default function Home() {
 							strokeLinecap="round"
 							strokeLinejoin="round"
 						>
-							<circle cx="12" cy="12" r="10"></circle>
-							<polygon points="10 8 16 12 10 16 10 8"></polygon>
+							<title>Player icon</title>
+							<circle cx="12" cy="12" r="10" />
+							<polygon points="10 8 16 12 10 16 10 8" />
 						</svg>
 						<span>Player</span>
 					</Link>

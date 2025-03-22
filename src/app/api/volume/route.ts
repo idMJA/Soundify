@@ -1,9 +1,11 @@
 import { type NextRequest, NextResponse } from "next/server";
 
 declare global {
+	/* eslint-disable no-var */
 	var currentAudioPlayer: HTMLAudioElement | null;
 	var currentTrackId: string | null;
 	var currentVolume: number;
+	/* eslint-enable no-var */
 }
 
 // Initialize volume if needed

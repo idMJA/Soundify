@@ -15,10 +15,6 @@ interface InvidiousVideo {
 	}>;
 }
 
-interface InvidiousSearchResult {
-	videos?: InvidiousVideo[];
-}
-
 // Define interfaces for stream formats
 interface InvidiousFormat {
 	url: string;

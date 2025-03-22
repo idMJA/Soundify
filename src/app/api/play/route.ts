@@ -10,8 +10,10 @@ import {
 
 // Global object to track playback state
 declare global {
+	/* eslint-disable no-var */
 	var currentAudioPlayer: HTMLAudioElement | null;
 	var currentTrackId: string | null;
+	/* eslint-enable no-var */
 }
 
 // Initialize global state if not already present

@@ -7,7 +7,7 @@ const CLIENT_ID =
 const CLIENT_SECRET =
 	process.env.SPOTIFY_CLIENT_SECRET || "db4f127c6e4e429d906f2256b8de9cce";
 
-export async function GET(request: Request) {
+export async function GET() {
 	try {
 		console.log("Spotify token request started");
 

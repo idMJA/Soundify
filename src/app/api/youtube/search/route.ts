@@ -69,8 +69,7 @@ interface SearchRequest {
 // Search strategy based on the Python code provided
 export async function POST(request: Request) {
 	try {
-		const { isrc, title, artist, spotifyId } =
-			(await request.json()) as SearchRequest;
+		const { isrc, title, artist } = (await request.json()) as SearchRequest;
 
 		// Validation
 		if (!isrc && (!title || !artist)) {

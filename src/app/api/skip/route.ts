@@ -9,9 +9,11 @@ interface Track {
 }
 
 declare global {
+	/* eslint-disable no-var */
 	var currentAudioPlayer: HTMLAudioElement | null;
 	var currentTrackId: string | null;
 	var currentQueue: Track[];
+	/* eslint-enable no-var */
 }
 
 // Initialize queue if needed

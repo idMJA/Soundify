@@ -1,8 +1,10 @@
 import { NextResponse } from "next/server";
 
 declare global {
+	/* eslint-disable no-var */
 	var currentAudioPlayer: HTMLAudioElement | null;
 	var currentTrackId: string | null;
+	/* eslint-enable no-var */
 }
 
 export async function POST() {

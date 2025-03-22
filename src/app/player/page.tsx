@@ -2,7 +2,6 @@
 
 import { useState, useEffect, useRef } from "react";
 import Image from "next/image";
-import Link from "next/link";
 import { Toaster, toast } from "sonner";
 import Cookies from "js-cookie";
 
@@ -123,7 +122,6 @@ export default function Player() {
 	const [isPlaying, setIsPlaying] = useState(false);
 	const [volume, setVolume] = useState(75);
 	const [queue, setQueue] = useState<Track[]>([]);
-	const [audioUrl, setAudioUrl] = useState<string | null>(null);
 	const [currentService, setCurrentService] = useState<string>("spotify");
 	const [isSearching, setIsSearching] = useState(false);
 	const [trendingVideos, setTrendingVideos] = useState<Track[]>([]);
@@ -168,6 +166,7 @@ export default function Player() {
 				audioRef.current = null;
 			}
 		};
+		// biome-ignore lint/correctness/useExhaustiveDependencies: <explanation>
 	}, []);
 
 	// Update audio volume when volume state changes and save to cookies
@@ -559,7 +558,6 @@ export default function Player() {
 				const audioData = await audioResponse.json();
 
 				if (audioData.audioUrl) {
-					setAudioUrl(audioData.audioUrl);
 					if (audioRef.current) {
 						audioRef.current.src = audioData.audioUrl;
 						audioRef.current.play();
@@ -582,17 +580,6 @@ export default function Player() {
 
 				// Try to play using the regular playTrack method
 				try {
-					// Create a non-Spotify track version
-					const regularTrack: Track = {
-						id: track.id || Math.random().toString(36).substring(2, 15),
-						title: track.title,
-						artist: track.artist,
-						thumbnail: track.thumbnail,
-						duration: track.duration,
-						album: track.album,
-						source: "search", // Mark as coming from search fallback
-					};
-
 					// Call the regular search API
 					const searchResponse = await fetch("/api/search", {
 						method: "POST",
@@ -635,7 +622,6 @@ export default function Player() {
 						const audioData = await audioResponse.json();
 
 						if (audioData.audioUrl) {
-							setAudioUrl(audioData.audioUrl);
 							if (audioRef.current) {
 								audioRef.current.src = audioData.audioUrl;
 								audioRef.current.play();
@@ -702,7 +688,6 @@ export default function Player() {
 				const data = await response.json();
 
 				if (data.audioUrl) {
-					setAudioUrl(data.audioUrl);
 					if (audioRef.current) {
 						audioRef.current.src = data.audioUrl;
 						audioRef.current.play();
