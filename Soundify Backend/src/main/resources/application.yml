@@ -1,0 +1,29 @@
+spring:
+  application:
+    name: soundify-backend
+  jackson:
+    serialization:
+      write-dates-as-timestamps: false
+
+server:
+  port: 8080
+  servlet:
+    context-path: /
+
+# Logging Configuration
+logging:
+  level:
+    root: INFO
+    com.mjba.soundify: DEBUG
+    org.springframework.web: INFO
+    com.sedmelluq: WARN
+  pattern:
+    console: "%d{yyyy-MM-dd HH:mm:ss} - %msg%n"
+
+# Soundify Custom Configuration
+soundify:
+  audio:
+    buffer-duration-ms: 400
+    frame-buffer-duration-ms: 1000
+    non-allocating: true
+    use-native-encoding: true 

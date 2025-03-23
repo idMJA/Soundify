@@ -10,6 +10,12 @@
 !.yarn/releases
 !.yarn/versions
 
+# build
+/build
+/.gradle
+/!gradle/wrapper/gradle-wrapper.jar
+/logs/
+
 # testing
 /coverage
 

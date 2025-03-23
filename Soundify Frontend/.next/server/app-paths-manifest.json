@@ -1,0 +1,12 @@
+{
+  "/_not-found/page": "app/_not-found/page.js",
+  "/api/invidious/trending/route": "app/api/invidious/trending/route.js",
+  "/api/lavalink/search/route": "app/api/lavalink/search/route.js",
+  "/api/play/route": "app/api/play/route.js",
+  "/api/spotify/search/route": "app/api/spotify/search/route.js",
+  "/api/spotify/token/route": "app/api/spotify/token/route.js",
+  "/api/spotify/track/route": "app/api/spotify/track/route.js",
+  "/api/youtube/search/route": "app/api/youtube/search/route.js",
+  "/favicon.ico/route": "app/favicon.ico/route.js",
+  "/player/page": "app/player/page.js"
+}
