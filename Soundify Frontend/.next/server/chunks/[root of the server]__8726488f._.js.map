@@ -1,7 +1,0 @@
-{
-  "version": 3,
-  "sources": [],
-  "sections": [
-    {"offset": {"line": 6, "column": 0}, "map": {"version":3,"sources":[],"names":[],"mappings":"","debugId":null}},
-    {"offset": {"line": 60, "column": 0}, "map": {"version":3,"sources":["file://D%3A/Soundify/src/app/api/invidious/trending/route.ts"],"sourcesContent":["import { NextResponse } from \"next/server\";\n\nconst INVIDIOUS_API = \"https://id.420129.xyz\";\n\nexport async function GET(request: Request) {\n\ttry {\n\t\tconst { searchParams } = new URL(request.url);\n\t\tconst region = searchParams.get(\"region\") || \"US\";\n\n\t\tconst response = await fetch(\n\t\t\t`${INVIDIOUS_API}/api/v1/trending?region=${region}`,\n\t\t);\n\t\tconst data = await response.json();\n\n\t\treturn NextResponse.json(data);\n\t} catch (error) {\n\t\tconsole.error(\"Error fetching trending videos:\", error);\n\t\treturn NextResponse.json(\n\t\t\t{ error: \"Failed to fetch trending videos\" },\n\t\t\t{ status: 500 },\n\t\t);\n\t}\n}\n"],"names":[],"mappings":";;;AAAA;;AAEA,MAAM,gBAAgB;AAEf,eAAe,IAAI,OAAgB;IACzC,IAAI;QACH,MAAM,EAAE,YAAY,EAAE,GAAG,IAAI,IAAI,QAAQ,GAAG;QAC5C,MAAM,SAAS,aAAa,GAAG,CAAC,aAAa;QAE7C,MAAM,WAAW,MAAM,MACtB,GAAG,cAAc,wBAAwB,EAAE,QAAQ;QAEpD,MAAM,OAAO,MAAM,SAAS,IAAI;QAEhC,OAAO,gIAAA,CAAA,eAAY,CAAC,IAAI,CAAC;IAC1B,EAAE,OAAO,OAAO;QACf,QAAQ,KAAK,CAAC,mCAAmC;QACjD,OAAO,gIAAA,CAAA,eAAY,CAAC,IAAI,CACvB;YAAE,OAAO;QAAkC,GAC3C;YAAE,QAAQ;QAAI;IAEhB;AACD","debugId":null}}]
-}
